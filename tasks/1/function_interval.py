@@ -7,6 +7,7 @@ start = int(input("Start x: "))
 slutt = int(input("Slutt x: "))
 
 print()
+print()
 for x in range(start, slutt+1):
     print(f"x: -- {x:^8.2f} -- | y: -- {f(x):^20.2f} -- ")
 
