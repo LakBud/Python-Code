@@ -40,7 +40,7 @@ Tuple = (9, 2, 3, 4, 7) # * List with () instead of []
 # print(b3)
 
 # print("------------------------")
-# # ? String
+# # ? String + Number
 
 # s = "xyz"
 
@@ -86,13 +86,24 @@ Tuple = (9, 2, 3, 4, 7) # * List with () instead of []
 # print(a,b,c,d, sep="\n")
 
 # ? The zip() function is an iterable & combines tuples into one
-fruit = "apple", "banana", "orange"
-price = 10, 8, 12
+# fruit = "apple", "banana", "orange"
+# price = 10, 8, 12
 
-combined = zip(fruit, price)
+# combined = zip(fruit, price)
 
-print(combined)
-print(*combined)
-print("--------------------")
-for fruit, price in zip(fruit, price):
-    print(f"The {fruit} costs {price} US dollars")
+# print(combined)
+# print(*combined)
+# print("--------------------")
+# for fruit, price in zip(fruit, price):
+#     print(f"The {fruit} costs {price} US dollars")
+
+
+# ? We can convert a tuple into a list with the list() function
+Tuple1 = (1, 2, 3, 4, "a", "b")
+listy = list(Tuple1)
+print(listy)
+
+# ? We can convert a list into a tuple if the variable assigns with (*list,)
+list = [1,2,3,4, "a", "b"]
+tuply = (*list,)
+print(tuply)
