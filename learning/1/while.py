@@ -4,7 +4,7 @@ count = 1
 summen = 0
 
 
-while count <= tall:
+while count < tall+1:
     summen += count
     count += 1
 

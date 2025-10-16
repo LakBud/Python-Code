@@ -44,3 +44,4 @@ print(number)
 while 3 in number:
     number.remove(3)
 print(number)
+
