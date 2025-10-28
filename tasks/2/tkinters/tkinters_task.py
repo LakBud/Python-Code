@@ -28,9 +28,6 @@ from tkinter import font
 # * 2
 
 
-    
-
-
 root = tk.Tk()
 root.title("A Professional Calculator")
 
