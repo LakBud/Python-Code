@@ -16,6 +16,8 @@ default_font.configure(family="Arial", size=20)
 
 car_data = [["Opel", "VW", "BMW", "Fiat", "Kia"], ["20000", "400000", "4050500", "1320230", "22390290" ]]
 
+# ---------------------------------------------------------------------------------------------------------
+
 
 car_frame = tk.Frame(root)
 car_frame.pack(pady=10) 
@@ -34,8 +36,13 @@ car_listbox.pack(side="left", fill="both")
 car_list_scroll.configure(command=car_listbox.yview)
 car_list_scroll.pack(side="right", fill="y")
 
+# ---------------------------------------------------------------------------------------------------------
+
+# ? the bind() method is used to associate an event with a specific function, known as an event handler or callback function, for a widget. This means that when a particular event occurs on that widget (e.g., a mouse click, a key press, or the mouse entering/exiting the widget's area), the bound function will be executed. 
 car_listbox.bind("<<ListboxSelect>>", choose_car)
 
+
+# ---------------------------------------------------------------------------------------------------------
 
 message = tk.Label(root, text="") 
 message.pack(pady=5)

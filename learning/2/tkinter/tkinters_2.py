@@ -33,7 +33,7 @@ def choose_answer():
 # A variable that stores the selected radio button value
 choice_var = tk.IntVar(value=-1)
 
-tk.Label(root, text="Lever du?", width=10).grid(row=0, column=0, pady=2)
+tk.Label(root, text="Do you exist?", width=10).grid(row=0, column=0, pady=2)
 
 tk.Radiobutton(root, text="Yes", variable=choice_var, value=0, width=10, command=choose_answer).grid(row=1, column=0)
 tk.Radiobutton(root, text="No", variable=choice_var, value=1, width=10, command=choose_answer).grid(row=1, column=1)
