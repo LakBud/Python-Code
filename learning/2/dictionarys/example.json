@@ -1,0 +1,18 @@
+{
+  "Title": "Person_register",
+  "people": [
+    {
+      "first_name": "Johnny",
+      "last_name": "Bang",
+      "phone": [{ "type": "mobile", "number": "123456789" }]
+    },
+    {
+      "first_name": "Trude",
+      "last_name": "Lutt",
+      "phone": [
+        { "type": "mobile", "number": "123123123" },
+        { "type": "job", "number": "987654321" }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ peoples: list = [
                 {"first_name": "Kevin", "last_name": "Tran", "f_date": "2008-10-19"}, 
                 {"first_name": "Nicolai", "last_name": "Haukefær", "f_date": "2008-12-12"}, 
                 {"first_name": "Barbara", "last_name": "Nilsen", "f_date": "2007-04-13"}, 
-                {"first_name": "Karanveer", "last_name": "Singh", "f_date": "2008-09-13"}
+                {"first_name": "Karanveer", "last_name": "Singh", "f_date": "2008-09-13"},
                 ]
 
 
