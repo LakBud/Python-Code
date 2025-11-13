@@ -33,14 +33,14 @@ print()
 
 number = [1,2,3,3,3,4,3,3,5,3,3,6,3] 
 
-# ! Aldri bruk for løkke for å endre elementer
+# ! Never use a for loop to remove elements within a list.
 for n in number:
     if n == 3:
      number.remove(n)
     
 print(number)
 
-# * Bruk en while løkke istedenfor
+# * Use a while loop instead
 while 3 in number:
     number.remove(3)
 print(number)

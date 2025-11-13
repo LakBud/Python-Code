@@ -9,7 +9,7 @@ import json
 # example: file = open("folder/filename")
 
 
-file_name: str = "learning/2/dictionarys/example.json" 
+file_name: str = "data/example.json" 
 
 # with() = a statement which opens a resource and guarantee that the resource will be closed when the with block completes, regardless of how the block completes.
 # Encoding represents how to convert data or info into a specific format

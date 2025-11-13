@@ -3,7 +3,7 @@ number_list = [1,2,3,4,5,6,7,8,9,10]
 word_list = ["Ha", "en", "veldig", "bra", "dag"]
 
 print(f"number_list is of type: {type(number_list)}")
-print(f"number_list is of length: {len(number_list)}") # ? len() = sier lengden til en liste/array
+print(f"number_list is of length: {len(number_list)}") # ? len() = says the length to a list/array
 print(f"word_list is of length: {len(word_list)}")
 
 print("--------------------------------------------------")
@@ -25,7 +25,7 @@ print(f"The next last element in word_list: {word_list[len(word_list)-2]}")
 
 print("--------------------------------------------------")
 
-# utsnitt_av_liste = liste[start : stop : steps]
+# list_variable = original_list[start : stop : steps]
 alphabet_list = ["A", "B", "C", "D", "E", "F"]
 print(alphabet_list[1:3])
 print(alphabet_list[:2])

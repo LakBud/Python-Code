@@ -32,7 +32,7 @@ print("---------------------------------------")
 
 word_list_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 range_object = range(1, 11)
-number_list_2 = list(range_object) # ? list() = type som teller hver eneste element av en range
+number_list_2 = list(range_object) # ? list() = type which counts every singe element within a range
 
 print(word_list_1)
 print(range_object)

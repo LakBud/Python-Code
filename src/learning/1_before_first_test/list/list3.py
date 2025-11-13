@@ -16,21 +16,21 @@ print(word_list)
 
 print("--------------------------------------------------")
 
-# liste.index(element): finner og returner indeksten (plasseringen) til det først element som finnes i lista. Hvis det ikke finnes får man en feilmelding.
-# liste.index(element: index): gjør det samme, men starter fra en gitt indeks (plassering)
-# element in liste: sjekker om elementet finnes i lista (kan brukes i while/if-setninger)
-# liste.count(element): returnerer antall forekomster av elemente lista.
+# liste.index(element): Finds and returns the index to the first element which exists in the list. If there doesnt exist, an error will occur.
+# liste.index(element: index): Does the same, but starts from an decided index.
+# element in liste: Checks if an element exists within the list (can be used in while-loops / if-sentences)
+# liste.count(element): Returns total count of the element within a list
 
 list = ["A", "B", "C", "D", "C", "B", "A"]
 word = "A"
-print(f"Det første treff på \"{word}\" er på index: {list.index(word)}")
-print(f"Det første treff på \"{word}\" er på index: {list.index(word, 2)}")
-print(f"Det er {list.count(word)} forekomster av  \"{word}\" i lista")
+print(f"The first attempt in \"{word}\" is in index: {list.index(word)}")
+print(f"The first attempt in \"{word}\" is in index: {list.index(word, 2)}")
+print(f"There are {list.count(word)} in \"{word}\"")
 
 if word in list:
-    print(f"\"{word}\" finnes i lista på indesk: {list.index(word)}")
+    print(f"\"{word}\" exists in the list within index: {list.index(word)}")
 else: 
-    print(f"Finner ikke \"{word}\" i lista")
+    print(f"Couldnt ifnd \"{word}\" in the list")
     
 
 print("--------------------------------------------------")
@@ -52,19 +52,19 @@ print(f"Sorted list after .reverse(): {sorted_liste}")
 print("--------------------------------------------------")
 
 list1 = [1,2,3,4,5]
-list2 = list1 # Det blir selveste list1, hvor hvis list1 endres, endres også list2
+list2 = list1 # This becomes list1, where if list1 change, changes list2 too
 
-print(f"{list1} og {list2}")
+print(f"{list1} and {list2}")
 
 list2[0]=10 
 
-print(f"{list1} og {list2}")
+print(f"{list1} and {list2}")
 
 print(f"list1 is list2: {list1 is list2}")
 print(f"list1 == list2: {list1 == list2}")
 
 
-list3 = list1.copy() # Dette KOPIERER list1, hvor det er IKKE selveste list1 og kan ha endringer uten list1.
+list3 = list1.copy() # This copies list1, where it is its own variable without being affected if list1 changes.
 
 print(f"list1 is list3: {list1 is list3}")
 print(f"list1 == list3: {list1 == list3}")
