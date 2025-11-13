@@ -1,8 +1,8 @@
-## Information Technology 2 / Informasjonsteknologi 2 Python Course 2025/2026
+# Informasjonsteknologi 2 / Information Technology 2 Python Course 2025/2026
 
 ---
 
-# Description:
+## Description:
 
 - This is a college subject in Norway which features Python.
 - This is useful for everyone in Norway who are studying Python within this subject.
@@ -11,9 +11,10 @@
 
 ---
 
-# File System:
+## File System:
 
 <!-- prettier-ignore -->
+```
 Informasjonsteknologi 2/
 ├── data/
 │   └── json_files/ → Datasets used in tasks and learning  
@@ -24,10 +25,11 @@ Informasjonsteknologi 2/
 │   └── tasks/
 │       └── school_tests/
 │           └── task_files/ → Assignments, exercises, and test practice
+```
 
 - The numbers on the files "learning" and "tasks" means the files were created before a college python test.
 - So all files on folder "1_before_first_test" means that the files were created before the first college test, etc.
-- WARNING: Some files in the Tasks folder is writted in Norwegian
+- WARNING: Some files in the tasks-folder is written in Norwegian
 
 ---
 
@@ -38,11 +40,10 @@ git clone <your-repo-url>
 cd informasjonsteknologi-2-course
 python3 -m venv venv
 source venv/bin/activate   # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
 ```
 
 ---
 
-# License
+## License
 
 Open Source.

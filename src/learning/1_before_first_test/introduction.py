@@ -1,7 +1,5 @@
 
-# Task 1:
-
-# Programmet ber om et heltall (int) som bestemmer "max"
+# The program asks for a integer which decides the variable "max". 
 
 max = int(input("Enter a whole Number: "))
 sum = 0

@@ -1,2 +1,16 @@
-__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# VS Code settings and temp files
+.vscode/
 tempCodeRunnerFile.py
+
+# macOS files
+.DS_Store
