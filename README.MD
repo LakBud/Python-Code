@@ -4,9 +4,8 @@
 
 ## Description:
 
-- This is a college subject in Norway which features Python.
-- This is useful for everyone in Norway who are studying Python within this subject.
-- A showcase of all of the resources within this class.
+- IT-2 is an college subject in Norway which features Python.
+- A showcase of all the resources and tests within IT-2
 - This Repo includes the 2025/2026 version of this subject.
 
 ---
