@@ -6,7 +6,7 @@ print()
 
 # ? Root
 # It has a type of module
-print (type(tk))
+print(type(tk))
 
 root = tk.Tk()
 

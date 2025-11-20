@@ -18,11 +18,14 @@ Informasjonsteknologi-2-python-course/
 ├── data/
 │   └── json_files/ → Datasets used in tasks and syntax folder  
 ├── src/
+│   ├── school_tests/
+│   │   └── tests/
+│   │       └── test-files/ → Files/images for the tests
 │   ├── syntax/
-│   │   └── school_tests/
+│   │   └── before_tests/
 │   │       └── syntax_files/ → Files made while syntax before each test 
 │   └── tasks/
-│       └── school_tests/
+│       └── before_tests/
 │           └── task_files/ → Assignments, exercises, and test practice
 ```
 

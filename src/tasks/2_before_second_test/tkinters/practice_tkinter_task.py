@@ -1,4 +1,5 @@
 print()
+import json
 import tkinter as tk
 from tkinter import font
 
@@ -6,10 +7,24 @@ from tkinter import font
 
 root = tk.Tk()
 root.title("Tkinter_practice_task")
-root.geometry("400x400")
+root.geometry("400x600")
 
 default_font = tk.font.nametofont("TkDefaultFont")
 default_font.configure(family="Arial", size=20)
+
+# ---------------------------------------------------------------------------------------------------------
+
+cars: str = "data/car_register.json"
+
+with open(cars, encoding="utf-8") as car_storage:
+    car_data: list = json.load(car_storage)
+
+
+car_id: str = lambda car: car["brand"]
+sorted_car_storage: list = sorted(car_data, key=car_id)
+
+
+# ---------------------------------------------------------------------------------------------------------
 
 
 def choose_car_details():
@@ -17,38 +32,24 @@ def choose_car_details():
         message.configure(text="Please select a car logo")
         return
     
-    chosen_car_index = car_listbox.curselection()[0]
-    selected_text = car_listbox.get(chosen_car_index)
+    chosen_car = car_listbox.curselection()
+    selected_text = car_listbox.get(chosen_car)
     message.configure(text=f"Here are details about the {selected_text} cars:")
     
-    details = ""
+    details_content = ""
     
     for car in sorted_car_storage:
-        if car["car_logo"] == selected_text:
-            details += "-----------------------------------\n"
-            for key, value in car.items():
-                details += f"{key:^25}:{value:^20}\n"
-
-    message_detail.configure(text=details)
-        
+        if car["brand"] == selected_text:
+            for details in car["details"]:
+                details_content += "\n"
+                for key, value in details.items():
+                    details_content += f"{key:^25}{value:^25}\n"
 
 
-# ---------------------------------------------------------------------------------------------------------
+    message_detail.configure(text=details_content)
 
-car_storage: list = [
-                    {"car_logo": "BMW", "car_model": "M5", "km_state": 20423, "car_price": 439034},
-                    {"car_logo": "BMW", "car_model": "M2", "km_state": 2323, "car_price": 23323},
-                    
-                    {"car_logo": "Mercedes", "car_model": "GLC", "km_state": 2232, "car_price": 23023},
-                    {"car_logo": "Mercedes", "car_model": "GLA", "km_state": 29032, "car_price": 230932},
-                    
-                    {"car_logo": "Kia", "car_model": "Soul", "km_state": 328932, "car_price": 201209},
-                    {"car_logo": "Kia", "car_model": "Sportage", "km_state": 9900, "car_price": 32023},
-                    ]
 
-car_id = lambda car_storage: car_storage["car_logo"]
 
-sorted_car_storage: list = sorted(car_storage, key=car_id)
 
 # ---------------------------------------------------------------------------------------------------------
 
@@ -59,13 +60,10 @@ car_frame.pack(pady=20)
 car_list_scroll = tk.Scrollbar(car_frame, orient="vertical")
 car_listbox = tk.Listbox(car_frame, height=5, width=15, yscrollcommand=car_list_scroll.set)
 
-last_brand = None
 
 for index, car in enumerate(sorted_car_storage):
-    brand = car["car_logo"]
-    if brand != last_brand:
-        car_listbox.insert(index, car["car_logo"])
-    last_brand = brand
+    car_listbox.insert(index, car["brand"])
+
 
 
 car_listbox.pack(side="left", fill="both")

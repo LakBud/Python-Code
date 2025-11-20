@@ -1,0 +1,47 @@
+[
+  {
+    "brand": "BMW",
+    "details": [
+      {
+        "model": "M5",
+        "mileage_KM": 20423,
+        "price": 439034
+      },
+      {
+        "model": "M2",
+        "mileage_KM": 2323,
+        "price": 23323
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes",
+    "details": [
+      {
+        "model": "GLC",
+        "mileage_KM": 2232,
+        "price": 23023
+      },
+      {
+        "model": "GLA",
+        "mileage_KM": 29032,
+        "price": 230932
+      }
+    ]
+  },
+  {
+    "brand": "Kia",
+    "details": [
+      {
+        "model": "Soul",
+        "mileage_KM": 328932,
+        "price": 201209
+      },
+      {
+        "model": "Sportage",
+        "mileage_KM": 9900,
+        "price": 32023
+      }
+    ]
+  }
+]
