@@ -80,6 +80,7 @@ car_list = [{"Logo":"VW", "Model":"ID.4", "Km_state":5000},
 # print(f"{car_droven_most = }") # The = sign makes it print out the variable = value
 # print(f"{car_droven_less = }")
 
+
 # ---
 
 # * 3) Itemgetter()

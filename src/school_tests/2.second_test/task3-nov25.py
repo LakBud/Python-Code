@@ -14,7 +14,7 @@ default_font.configure(family="Arial", size=20)
 
 # ---------------------------------------------------------------------------------------------------------
 
-fly: str = "json-til-prove-nov-25.json" 
+fly: str = "src/school_tests/2.second_test/json-for-test-nov-25.json" 
 
 
 with open(fly, encoding="utf-8") as fly_fil:
@@ -35,7 +35,7 @@ def choose_fly_details():
     selected_text = fly_listbox.get(chosen_fly)
     message.configure(text=f"Here are details about the {selected_text} flights:")
     
-    details_content =""
+    details_content = ""
     
     for fly in sortert_flyselskap:
         if fly["navn"] == selected_text:

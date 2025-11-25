@@ -1,17 +1,18 @@
 print()
 import json
 
-with open("json-til-prove-nov-25.json", encoding="utf-8") as fil:
-    data = json.load(fil)
+fly: str = "src/school_tests/2.second_test/json-for-test-nov-25.json" 
+
+with open(fly, encoding="utf-8") as fly_fil:
+    fly_data = json.load(fly_fil)
 
 
 alle_avganger = []
-for fly in data["flyselskap"]:
-    navn = fly["navn"]
+for fly in fly_data["flyselskap"]:
     for avgang in fly["avganger"]:
         alle_avganger.append({
             "tid": avgang["tid"],
-            "navn": navn,
+            "navn": fly["navn"],
             "destinasjon": avgang["destinasjon"]
         })
 
