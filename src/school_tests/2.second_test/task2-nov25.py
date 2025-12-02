@@ -4,7 +4,7 @@ import json
 fly: str = "src/school_tests/2.second_test/json-for-test-nov-25.json" 
 
 with open(fly, encoding="utf-8") as fly_fil:
-    fly_data = json.load(fly_fil)
+    fly_data: dict = json.load(fly_fil)
 
 
 alle_avganger = []

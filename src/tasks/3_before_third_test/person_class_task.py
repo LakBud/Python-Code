@@ -67,6 +67,14 @@ class Person:
         
         print(f"First Name: {self.first_name:^10} | Last Name: {self.last_name:^10} | Age: {self.calculate_age():^10} | Birth Date: {birth_date_str:^10}")
         
+class Student(Person):
+    
+    def __init__(self, first_name, last_name, birth_date):
+        super().__init__(first_name, last_name, birth_date)
+        
+        self.birth_date = birth_date
+        
+        
 
 p1 = Person("Jimmy", "Devold", "07-01-2008") 
 p2 = Person("Max", "Timmy", "03-12-2030")
